@@ -48,6 +48,8 @@ DELETE FROM Students: To remove Angel from the table:
 WHERE id = 1;
 Then check again: SELECT * FROM Students;
 
+```sql
+
 ---
 
 ## RDS Setup
