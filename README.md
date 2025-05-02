@@ -12,7 +12,43 @@ This project demonstrates basic database services on AWS using Amazon RDS and Dy
 - **Public Access:** Enabled
 - **Client Used:** MySQL Workbench
 
+---
+
+## DynamoDB Setup
+
+- Table: `Products`
+- Partition Key: `ProductID`
+- Sample Items:
+  - `ProductID`: "1001", `Name`: "Laptop", `Price`: 1299
+
+{
+  "UserID": "user123",
+  "Name": "Jane Doe",
+  "Email": "jane@example.com"
+}
+
+## Screenshots
+
+Here are the key screenshots:
+
+- **Screenshot 1**: RDS instance
+  ![RDS instance dashboard showing the status as “Available”](https://raw.githubusercontent.com/OrireB/aws-database-services/ae1d9ac30ea39892268b982dae29934a245812c5/RDS%20instance.png)
+
+---
+
+- **Screenshot 2**: MySQL Connected Successfully
+  ![Connected MySQL with database overview](https://raw.githubusercontent.com/OrireB/aws-database-services/ae1d9ac30ea39892268b982dae29934a245812c5/MySQL%20Connected%20Successfully.png)
+
+---
+
+## Architectural Diagram
+
+![Architecture](architecture-diagram.png)
+
+
 ### SQL Operations
+- **SQL Queries:**
+  - Create, Read, Update, Delete operations on a `users` table.
 
 ```sql
 
@@ -47,40 +83,3 @@ Then run: SELECT * FROM Students;
 DELETE FROM Students: To remove Angel from the table:
 WHERE id = 1;
 Then check again: SELECT * FROM Students;
-
-```sql
-
----
-
-## RDS Setup
-
-- **Engine:** MySQL/PostgreSQL
-- **Host:** [your RDS endpoint]
-- **Client:** DBeaver / MySQL Workbench
-- **SQL Queries:**
-  - Create, Read, Update, Delete operations on a `users` table.
-
-## DynamoDB Setup
-
-- Table: `Products`
-- Partition Key: `ProductID`
-- Sample Items:
-  - `ProductID`: "1001", `Name`: "Laptop", `Price`: 1299
-
-## Screenshots
-
-Here are the key screenshots:
-
-- **Screenshot 1**: RDS instance
-  ![RDS instance dashboard showing the status as “Available”](https://raw.githubusercontent.com/OrireB/aws-database-services/ae1d9ac30ea39892268b982dae29934a245812c5/RDS%20instance.png)
-
----
-
-- **Screenshot 2**: MySQL Connected Successfully
-  ![Connected MySQL with database overview](https://raw.githubusercontent.com/OrireB/aws-database-services/ae1d9ac30ea39892268b982dae29934a245812c5/MySQL%20Connected%20Successfully.png)
-
----
-
-## Architectural Diagram
-
-![Architecture](architecture-diagram.png)
