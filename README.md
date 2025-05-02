@@ -41,16 +41,14 @@ UPDATE Students: To change Anthony’s email:
 SET email = 'anthony@example.com'
 WHERE id = 2;
 Then run: SELECT * FROM Students;
-**Client Used:**
 **This shows Bob’s updated email.**
-
 
 -- Delete data
 DELETE FROM Students: To remove Angel from the table:
 WHERE id = 1;
 Then check again: SELECT * FROM Students;
 
-
+---
 
 ## RDS Setup
 
